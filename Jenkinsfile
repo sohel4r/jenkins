@@ -1,13 +1,5 @@
 #!groovy
 
-node('node') {
-
-
-    def err = null
-    currentBuild.result = "SUCCESS"
-
-    try {
-
        stage 'Checkout'
 
             checkout scm
@@ -34,7 +26,3 @@ node('node') {
                         replyTo: 'xxxx@yyyy.com',
                         subject: 'project build successful',
                         to: 'yyyyy@yyyy.com'
-
-        }
-
-}
