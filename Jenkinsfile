@@ -1,10 +1,5 @@
 #!groovy
 
-
-stage 'Checkout'
-
-    checkout master
-
 stage 'Test'
 
     env.NODE_ENV = "test"
