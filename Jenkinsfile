@@ -2,7 +2,7 @@
 
 stage 'Test'
 
-node('node') {
+node('slave') {
 
     env.NODE_ENV = "test"
 
