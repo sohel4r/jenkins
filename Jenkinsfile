@@ -6,4 +6,7 @@ stage 'Test'
 
     print "Environment will be : ${env.NODE_ENV}"
 
-    echo "Hello World" 
+    sh 'node -v'
+    sh 'npm prune'
+    sh 'npm install'
+    sh 'npm test'
