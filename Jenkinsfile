@@ -3,7 +3,7 @@
 
 stage 'Checkout'
 
-    checkout scm
+    checkout master
 
 stage 'Test'
 
@@ -11,13 +11,4 @@ stage 'Test'
 
     print "Environment will be : ${env.NODE_ENV}"
 
-    sh 'node -v'
-    sh 'npm prune'
-    sh 'npm install'
-    sh 'npm test'
-
-stage 'Cleanup'
-
-    echo 'prune and cleanup'
-    sh 'npm prune'
-    sh 'rm node_modules -rf' 
+    echo "Hello World" 
